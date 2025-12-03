@@ -79,11 +79,11 @@ For k = 2:
 
 - **2c.** APSP(i,j,k) = min(APSP(i,j,k-1), APSP(i,k,k-1) + APSP(k,j,k-1)). The shortest path from i to j using vertices {0,...,k} is either the same as the best path when we would only use vertices {0,...,k-1} or it is a path that does include vertex k at least once. In the latter case, we would find the optimal path from i to k, and the optimal path from k to j, and add them. The minimum of these two cases is the shortest path from i to j.
 
-- **2d.**
+- **2d.** k = -1 to n-1, meaning k has n+1 values. With n choices for i, n choices for j, and n+1 choices for k, total subproblems would be n*n*(n+1) = n*(n^2 + n) = n^3 + n^2 = O(n^3). Each subproblem takes O(1) work, meaning total work is O(n^3).
 
-- **2e.**
+- **2e.** The dynamic programming algorithm has work O(|V|^3), and Johnson's algorithm runs in O(|V||E|log|E|) work. For sparse graphs with a small |E|, Johnson's algorithm is faster. Dense graphs where |E| is on the order of |V|^2 make the dynamic programming algorithm preferable. 
 
-
+|V|^3 < |V|*|V|^2*log(|V|^2).
 
 - **3a.**
 
