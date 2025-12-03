@@ -83,7 +83,7 @@ For k = 2:
 
 - **2e.** The dynamic programming algorithm has work O(|V|^3), and Johnson's algorithm runs in O(|V||E|log|E|) work. For sparse graphs with a small |E|, Johnson's algorithm is faster. Dense graphs where |E| is on the order of |V|^2 make the dynamic programming algorithm preferable. 
 
-|V|^3 < |V|*|V|^2*log(|V|^2).
+|V|^3 < |V|*|V|<sup>2</sup>*log(|V|^2).
 
 - **3a.**
 
