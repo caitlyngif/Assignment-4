@@ -85,10 +85,10 @@ For k = 2:
 
 |V|^3 < |V|*|V|<sup>2</sup>*log(|V|^2).
 
-- **3a.**
+- **3a.** Yes because every MST is an MMET.
 
 
-- **3b.**
+- **3b.** Compute MST and set its total weight to W. For each edge not in the MST, add the edge to the MST. Find the edge of the largest weight and remove it if the weight does not equal the edge. Find the total weight after you've removed it.
 
 
-- **3c.**
+- **3c.** O(|E|*|V|)
