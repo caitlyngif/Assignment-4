@@ -74,10 +74,10 @@ For k = 2:
     APSP(2,1,2) = -4 (2->2->1 = 0 + -4)
     APSP(2,2,2) = 0 (2->2->2 = 0 + 0)
 
-- **2b.**
+- **2b.** It is unchanged going from k=1 to k=2. But ASPS(i,j,2) can be written as min(APSP(i,j,1), ASPS(i,2,1) + APSP(2,j,1)). Because we want to see if the shortest path from i to j does not use vertex 2 as an intermediate, or if it's shorter to use 2 as an intermediate. In this case, using 2 as an intermediate did not make the path shorter.
 
 
-- **2c.**
+- **2c.** APSP(i,j,k) = min(APSP(i,j,k-1), APSP(i,k,k-1) + APSP(k,j,k-1)). The shortest path from i to j using vertices {0,...,k} is either the same as the best path when we would only use vertices {0,...,k-1} or it is a path that does include vertex k at least once. In the latter case, we would find the optimal path from i to k, and the optimal path from k to j, and add them. The minimum of these two cases is the shortest path from i to j.
 
 - **2d.**
 
