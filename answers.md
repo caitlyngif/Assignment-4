@@ -18,10 +18,10 @@ and up to |E| insert operations.
 O(|E| * log<sub>d</sub> |V|)
 
  Therefore, the new bound on the work is 
- 
+
  O(|E| * log<sub>d</sub>|V| +  |V| * d * log<sub>d</sub>|V|)
 
-- **1d.**
+- **1d.** d = |V|<sup>$\epsilon$</sup>
 
 
 - **2a.**
