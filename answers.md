@@ -21,7 +21,7 @@ O(|E| * log<sub>d</sub> |V|)
 
  O(|E| * log<sub>d</sub>|V| +  |V| * d * log<sub>d</sub>|V|)
 
-- **1d.** d = |V|^$\epsilon$^
+- **1d.** d = |V|^$\epsilon$
 
 
 - **2a.**
